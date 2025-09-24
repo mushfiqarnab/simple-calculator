@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main class="calc" role="application" aria-label="Simple calculator">
+        <header>
+            <h1>Simple Calculator</h1>
+        </header>
+
+        <div class="display-wrapper">
+            <input type="text" name="" id="display" readonly aria-label="Calculator display" value="0">
+        </div>
+
+        <div class="buttons" id="buttons" aria-hidden="false">
+            <button data-action="clear">C</button>
+            <button data-action="back"> ⌫ </button>
+            <button data-value="(">(</button>
+            <button data-value=")">)</button>
+
+
+            <button data-value="7">7</button>
+            <button data-value="8">8</button>
+            <button data-value="9">9</button>
+            <button data-value="/">/</button>
+
+            <button data-value="4">4</button>
+            <button data-value="5">5</button>
+            <button data-value="6">6</button>
+            <button data-value="*">*</button>
+
+            <button data-value="1">1</button>
+            <button data-value="2">2</button>
+            <button data-value="3">3</button>
+            <button data-value="-">-</button>
+
+            <button data-value="0">0</button>
+            <button data-value=".">.</button>
+            <button data-action="calculate" class="calculate">=</button>
+            <button data-value="+">+</button>
+        </div>
+        <footer class="player-footer">
+            <label for="audio-file" class="audio-label">Play music while calculating:</label>
+            <input type="file" id="audio-file" accept="audio/*" aria-label="Upload an audio file to play">
+            <audio id="player" controls hidden></audio>
+            <p>© 2025 Simple Calculator | Built by Arnab</p>
+            <p><a href="https://github.com/your-username/simple-calculator"  rel="noopener noreferrer">View on GitHub</a></p>
+
+
+        </footer>
+    </main>
+    <script src="script.js"></script>
+
+    
+</body>
+</html>
